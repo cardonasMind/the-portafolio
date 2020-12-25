@@ -1,0 +1,17 @@
+.social {
+    background: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.social__github {
+    color: white;
+}
+
+.social__github img {
+    margin: .2rem auto;
+    display: block;
+}

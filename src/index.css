@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Arial;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: var(--jet);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+:root {
+    --jet: #0A0A0A;
+    --baby-militar: #87C38F;
+}
+
+
+/*          Text highlight          */
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--baby-militar);
+}
+
+::selection {
+  color: white;
+  background: var(--baby-militar);
+}
+
+
+
+/*          Custom scrollbar         */
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--jet);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7A7A7A;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+	/* Transitional, like tablets */
+}
+
+@media only screen and (max-width: 768px) {
+	/* Small, like phones */
+}
