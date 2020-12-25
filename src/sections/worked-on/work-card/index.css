@@ -1,0 +1,51 @@
+.work-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem;
+    padding-right: 2rem;
+    color: white;
+}
+
+
+
+.work-card__image {
+    width: 60rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.work-card__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(270deg, var(--jet), rgba(0, 0, 0, .1));
+    z-index: -1;
+}
+
+
+
+.work-card__content {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 4rem 0;
+}
+
+
+
+.work-card__content-button {
+    padding: .6rem 2rem;
+    width: fit-content;
+    color: white;
+    border: 2px solid white;
+}
+
+.work-card__content-button:hover {
+    background: white;
+    color: black;
+}
