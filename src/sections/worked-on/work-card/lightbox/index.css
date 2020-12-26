@@ -1,0 +1,56 @@
+.work-card-lightbox__button {
+    padding: .6rem 2rem;
+    width: fit-content;
+    color: white;
+    border: 2px solid white;
+}
+
+.work-card-lightbox__button:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.work-card-lightbox__main {
+    background: var(--jet);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100vw;
+    z-index: 999;
+    transition: .2s;
+    overflow-x: auto
+}
+
+
+
+.work-card-lightbox__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 2rem;
+}
+
+.work-card-lightbox__header-tecnologies {}
+
+.work-card-lightbox__header-repo {}
+
+.work-card-lightbox__go-back {
+    background: white;
+    color: black;
+    padding: .6rem 2rem;
+    width: fit-content;
+    transition: .2s;
+}
+
+.work-card-lightbox__go-back:hover {
+    background: lightgray;
+}
+
+
+
+.work-card-lightbox__content {
+    background: rgba(255, 255, 255, .15);
+    height: 100vh;
+}

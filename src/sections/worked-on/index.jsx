@@ -10,7 +10,12 @@ export default function WorkedOn() {
             <h1>I've worked on</h1>
             
             <div className="worked-on__cards">
-                <WorkCard />
+                <WorkCard 
+                    image="/images/works/santiamen.png" title="Santiamén" 
+                    description="Santiamén was a fast-food delivery platform where business owners of my location can upload their shit thii wuuehri ehreiqi sadia idhaidh ia Santiamén was a fast-food delivery platform where business owners of my location."
+                >
+                    fdfdf
+                </WorkCard>
             </div>
         </div>
     )
