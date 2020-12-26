@@ -8,7 +8,7 @@
 
 
 
-.work-card__image {
+.work-card .work-card__image {
     width: 60rem;
     height: 25rem;
     background-size: cover;
@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-.work-card__image::before {
+.work-card .work-card__image::before {
     content: "";
     position: absolute;
     top: 0;
@@ -31,13 +31,13 @@
 
 
 
-.work-card__content {
+.work-card .work-card__content {
     display: grid;
     grid-gap: 2rem;
     align-items: center;
     padding: 4rem 0;
 }
 
-.work-card__content-description {
+.work-card .work-card__content-description {
     text-align: justify;
 }

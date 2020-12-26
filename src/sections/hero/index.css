@@ -23,20 +23,20 @@
 
 
 
-.hero__title {
+.hero .hero__title {
     display: flex;
     align-items: baseline;
     font-size: 6rem;
     line-height: 1.2;
 }
 
-.hero__title-image {
+.hero .hero__title-image {
     width: 3rem;
     margin-left: 1rem;
 }
 
 
-.hero__subtitle {
+.hero .hero__subtitle {
     font-size: 4rem;
     line-height: 1;
     color: lightgrey;

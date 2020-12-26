@@ -9,7 +9,7 @@ export default function Hero() {
                 Diego Cardona
                 <img src="/images/icons/colombia-flag.svg" className="hero__title-image" /> 
             </h1>
-            <h2 className="hero__subtitle">JavaScript Web Developer</h2>
+            <h2 className="hero__subtitle">JavaScript Developer (Web oriented)</h2>
         </div>
     )
 }

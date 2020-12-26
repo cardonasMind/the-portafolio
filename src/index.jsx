@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import "./index.css";
 
 import Hero from"./sections/hero";
+import LookingFor from "./sections/looking-for";
 import WorkedOn from "./sections/worked-on";
 import Social from "./sections/social";
 
@@ -13,6 +14,7 @@ class App extends PureComponent {
 		return (
 			<Fragment>
                 <Hero />
+                <LookingFor />
                 <WorkedOn />
                 <Social />
 			</Fragment>

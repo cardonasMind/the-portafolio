@@ -35,6 +35,18 @@ h4 {
 	font-size: 1.4rem;
 }
 
+
+.highlight {
+    color: black;
+    background: #E0CA3C;
+    transition: .2s;
+}
+
+.highlight:hover {
+    background: #DEC62B;
+}
+
+
 :root {
     --jet: #0A0A0A;
     --baby-militar: #87C38F;

@@ -3,6 +3,7 @@ import react from "react";
 import "./index.css";
 
 import WorkCard from "./work-card";
+import { Santiamen } from "./works-content";
 
 export default function WorkedOn() {
     return (
@@ -12,9 +13,11 @@ export default function WorkedOn() {
             <div className="worked-on__cards">
                 <WorkCard 
                     image="/images/works/santiamen.png" title="Santiamén" 
-                    description="Santiamén was a fast-food delivery platform where business owners of my location can upload their shit thii wuuehri ehreiqi sadia idhaidh ia Santiamén was a fast-food delivery platform where business owners of my location."
+                    description="Santiamén is a fast-food delivery platform created for business on where I live that was receiving orders by WhatsApp. Creating an unificated site where all business can be on, adding more and better things for their clients and themselves (business owners)."
+                    technologies=""
+                    repo="santiamen"
                 >
-                    fdfdf
+                    <Santiamen />
                 </WorkCard>
             </div>
         </div>

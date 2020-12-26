@@ -4,7 +4,7 @@ import "./index.css";
 
 import WorkCardLightBox from "./lightbox"
 
-export default function WorkCard({ image, title, description, children }) {
+export default function WorkCard({ image, title, description, technologies, repo, children }) {
     return (
         <div className="work-card">
             <div className="work-card__image" style={{ backgroundImage: `url(${image})` }} />
@@ -13,7 +13,7 @@ export default function WorkCard({ image, title, description, children }) {
                 
                 <p className="work-card__content-description">{description}</p>
                 
-                <WorkCardLightBox>
+                <WorkCardLightBox technologies={technologies} repo={repo}>
                     {children}
                 </WorkCardLightBox>
             </div>

@@ -7,11 +7,11 @@
 
 
 
-.social__github {
+.social .social__github {
     color: white;
 }
 
-.social__github img {
+.social .social__github img {
     margin: .2rem auto;
     display: block;
 }

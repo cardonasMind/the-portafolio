@@ -11,21 +11,22 @@ export default class extends PureComponent {
     
     render() {
         const { showContent } = this.state;
-        const { children } = this.props;
+        const { technologies, repo, children } = this.props;
         
         return (
             <div className="work-card-lightbox">
                 <div className="work-card-lightbox__button" onClick={this.toggleShowContent}><p>See it</p></div>
                 
-                <div className="work-card-lightbox__main" style={{ left: showContent ? "0" : "100vw" }}>
+                <div className="work-card-lightbox__main" style={{ top: showContent ? "0" : "100vh" }}>
                     <div className="work-card-lightbox__header">
                         <div className="work-card-lightbox__header-tecnologies">
                             <b>Used technology</b>
                             
-                            React NextJs 
+                            {technologies}
+                            NEXTJS REACT
                         </div>
                         <a className="work-card-lightbox__header-repo" 
-                            href="https://github.com/cardonasmind" target="_blank">
+                            href={`https://github.com/cardonasmind/${repo}`} target="_blank">
                             <img src="/images/icons/github.svg" /> code
                         </a>
                         
