@@ -11,7 +11,6 @@ export default function WorkedOn() {
             
             <div className="worked-on__cards">
                 <WorkCard />
-                <WorkCard />
             </div>
         </div>
     )

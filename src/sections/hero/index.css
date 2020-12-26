@@ -3,8 +3,8 @@
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 20rem;
-    padding-left: 4rem;
+    background-position: bottom;
+    padding: 20rem 0 2rem 4rem;
     color: white;
     position: relative;
     z-index: 1;
