@@ -3,6 +3,7 @@
     width: fit-content;
     color: white;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .work-card-lightbox .work-card-lightbox__button:hover {

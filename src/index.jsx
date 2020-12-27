@@ -6,6 +6,7 @@ import "./index.css";
 
 import Hero from"./sections/hero";
 import LookingFor from "./sections/looking-for";
+import SkillSet from "./sections/skill-set"
 import WorkedOn from "./sections/worked-on";
 import Social from "./sections/social";
 
@@ -15,6 +16,7 @@ class App extends PureComponent {
 			<Fragment>
                 <Hero />
                 <LookingFor />
+                <SkillSet />
                 <WorkedOn />
                 <Social />
 			</Fragment>

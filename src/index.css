@@ -50,6 +50,13 @@ h4 {
 :root {
     --jet: #0A0A0A;
     --baby-militar: #87C38F;
+    
+    --basic-skill: #9AA899;
+    --basic-skill-hover: #C8D0C8;
+    --intermedium-skill: #735D78;
+    --intermedium-skill-hover: #A18CA6;
+    --advanced-skill: #124E78;
+    --advanced-skill-hover: #1D7EC3;
 }
 
 
