@@ -10,3 +10,22 @@
 .looking-for h1 {
     margin-bottom: 2rem;
 }
+
+
+
+
+@media only screen and (max-width: 991px) {
+    /* Medium, like tablets */
+    .looking-for {
+        margin: 10rem 8rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+	/* Small, like phones */
+    .looking-for {
+        margin: 10rem 1rem;
+        padding: 2rem;
+    }
+}

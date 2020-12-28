@@ -35,7 +35,11 @@
 
 .work-card-lightbox .work-card-lightbox__main .work-card-lightbox__header .work-card-lightbox__header-tecnologies {
     display: grid;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
+    grid-gap: .4rem;
+    align-items: center;
+    width: fit-content;
+    margin-top: .4rem;
 }
 
 .work-card-lightbox .work-card-lightbox__main .work-card-lightbox__header .work-card-lightbox__header-repo {
@@ -53,14 +57,17 @@
     width: fit-content;
     transition: .2s;
     margin: 0 -2rem;
+    cursor: pointer;
 }
 
 .work-card-lightbox .work-card-lightbox__main .work-card-lightbox__header .work-card-lightbox__go-back:hover {
-    background: lightgray;
+    background: black;
+    color: white;
 }
 
 
 
 .work-card-lightbox .work-card-lightbox__main .work-card-lightbox__content {
     height: 100vh;
+    overflow-y: auto;
 }

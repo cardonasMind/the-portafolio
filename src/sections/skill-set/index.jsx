@@ -19,7 +19,7 @@ export default function SkillSet() {
             
             <div className="skill-set__cards">
                 <div className="skill-set__card skill-set__card_advanced">
-                    <img src="/images/icons/skills/javascript.svg" /> JAVASCRIPT
+                    <img src="/images/icons/skills/javascript.svg" /> JavaScript
                 </div>
                 <div className="skill-set__card skill-set__card_advanced">
                     <img src="/images/icons/skills/html5.svg" /> HTML5
@@ -28,25 +28,25 @@ export default function SkillSet() {
                     <img src="/images/icons/skills/css3.svg" /> CSS3
                 </div>
                 <div className="skill-set__card skill-set__card_intermedium">
-                    <img src="/images/icons/skills/reactjs.svg" /> REACTJS
+                    <img src="/images/icons/skills/reactjs.svg" /> ReactJS
                 </div>
                 <div className="skill-set__card skill-set__card_basic">
                     <img src="/images/icons/skills/npm.svg" /> NPM
                 </div>
                 <div className="skill-set__card skill-set__card_intermedium">
-                    <img src="/images/icons/github.svg" /> GIT & GITHUB
+                    <img src="/images/icons/github.svg" /> Git & GitHub
                 </div>
                 <div className="skill-set__card skill-set__card_intermedium">
                     <img src="/images/icons/skills/nextjs.png" width="80px" />
                 </div>
                 <div className="skill-set__card skill-set__card_basic">
-                    <img src="/images/icons/skills/webpack.svg" /> WEBPACK
+                    <img src="/images/icons/skills/webpack.svg" /> Webpack
                 </div>
                 <div className="skill-set__card skill-set__card_intermedium">
-                    <img src="/images/icons/skills/firebase.svg" /> FIREBASE
+                    <img src="/images/icons/skills/firebase.svg" /> Firebase
                 </div>
                 <div className="skill-set__card skill-set__card_basic">
-                    <img src="/images/icons/skills/nodejs.svg" /> NODEJS
+                    <img src="/images/icons/skills/nodejs.svg" /> NodeJS
                 </div>
                 <div className="skill-set__card skill-set__card_intermedium">
                     <img src="/images/icons/skills/sass.svg" /> SASS

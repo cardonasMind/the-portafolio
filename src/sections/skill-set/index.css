@@ -114,3 +114,37 @@
 .skill-set__card.skill-set__card_advanced:hover {
     background: linear-gradient(transparent, var(--advanced-skill-hover));
 }
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	/* Small, like phones */
+    .skill-set {
+        padding: 0 1rem; 
+    }
+    
+    
+    
+    .skill-set .skill-set__info {
+        grid-gap: 2rem;
+    }
+
+    
+    
+    .skill-set .skill-set__cards {
+        grid-gap: 2rem;
+    }
+    
+    .skill-set .skill-set__cards .skill-set__card {
+        padding: 1rem 2rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .skill-set .skill-set__cards .skill-set__card img {
+        width: 2.8rem;
+    }
+}

@@ -2,7 +2,7 @@
     margin: 20rem 0;
 }
 
-.worked-on h1 {
+.worked-on .worked-on__title {
     background: white;
     width: fit-content;
     font-size: 3rem;

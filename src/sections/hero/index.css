@@ -41,3 +41,35 @@
     line-height: 1;
     color: lightgrey;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+	/* Small, like phones */
+    .hero {
+        padding: 50vh 0 2rem 2rem;
+        color: white;
+        position: relative;
+        background-attachment: inherit;
+        z-index: 1;
+    }
+    
+    
+    
+    .hero .hero__title {
+        display: inline-block;
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+    
+    
+    .hero .hero__subtitle {
+        font-size: 2rem;
+        line-height: 1;
+        color: lightgrey;
+    }
+    
+}

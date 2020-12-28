@@ -1,0 +1,9 @@
+#santiamen-project__header {
+    padding: 2rem;
+}
+
+#santiamen-project__content {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}

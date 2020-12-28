@@ -19,11 +19,12 @@ export default class extends PureComponent {
                 
                 <div className="work-card-lightbox__main" style={{ top: showContent ? "0" : "100vh" }}>
                     <div className="work-card-lightbox__header">
-                        <div className="work-card-lightbox__header-tecnologies">
+                        <div>
                             <b>Used technology</b>
                             
-                            {technologies}
-                            NEXTJS REACT
+                            <div className="work-card-lightbox__header-tecnologies">
+                                {technologies.map(item => <img src={item} width="30px" />)}
+                            </div>
                         </div>
                         <a className="work-card-lightbox__header-repo" 
                             href={`https://github.com/cardonasmind/${repo}`} target="_blank">
