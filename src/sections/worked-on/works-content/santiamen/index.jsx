@@ -19,14 +19,14 @@ export default function Santiamen() {
                         frameborder="0"
                         id="inlineFrameExample"
                         title="Inline Frame Example"
-                        width="340"
-                        height="600"
+                        width="340px"
+                        height="600px"
                         src="https://www.santiamen.ml">
                     </iframe>
                 </div>
             
                 <div>
-                    <h2>Business owner demo</h2>
+                    <h2>Business owner demo (under construction)</h2>
 
                     <iframe 
                         frameborder="0"
@@ -34,7 +34,7 @@ export default function Santiamen() {
                         title="Inline Frame Example"
                         width="340px"
                         height="600px"
-                        src="https://www.santiamen.ml">
+                        src="https://www.santiamen.ml/demo">
                     </iframe>
                 </div>
             </div>
