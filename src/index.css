@@ -1,3 +1,6 @@
+/*  Title´s font */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&display=swap');
+/* Text font */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Montserrat&display=swap');
 
 * {
@@ -7,14 +10,12 @@
     text-decoration: none;
 }
 
-
-
 body {
     background: var(--jet);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 h1 {
@@ -36,39 +37,38 @@ h4 {
 }
 
 
-.highlight {
-    color: black;
-    background: #E0CA3C;
-    transition: .2s;
+
+a:link {
+    color: var(--bluish);
 }
 
-.highlight:hover {
-    background: #DEC62B;
+a:visited {
+    color: var(--haulm);
 }
 
-
-:root {
-    --jet: #0A0A0A;
-    --baby-militar: #87C38F;
-    
-    --basic-skill: #9AA899;
-    --basic-skill-hover: #C8D0C8;
-    --intermedium-skill: #735D78;
-    --intermedium-skill-hover: #A18CA6;
-    --advanced-skill: #124E78;
-    --advanced-skill-hover: #1D7EC3;
-}
 
 
 /*          Text highlight          */
 ::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: var(--baby-militar);
+    color: var(--haulm);
+    background: var(--text);
 }
 
 ::selection {
-  color: white;
-  background: var(--baby-militar);
+    color: var(--haulm);
+    background: var(--text);
+}
+
+
+
+:root {
+    --jet: #0A0A0A;
+    --text: #222222;
+    --almost-white: #F2F2F2;
+    --gum: #FF80EA;
+    --sparkle: #12F8D5;
+    --bluish: #1FCBFF;
+    --haulm: #FFD080;
 }
 
 
@@ -89,6 +89,7 @@ h4 {
 ::-webkit-scrollbar-thumb:hover {
   background: #7A7A7A;
 }
+
 
 
 @media only screen and (max-width: 991px) {

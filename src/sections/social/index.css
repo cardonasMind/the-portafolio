@@ -1,17 +1,17 @@
-.social {
-    background: black;
-    padding: 2rem;
+#social {
+    background: var(--text);
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
 
 
-.social .social__github {
+#social #social__github {
     color: white;
 }
 
-.social .social__github img {
-    margin: .2rem auto;
+#social #social__github img {
     display: block;
+    margin: .4rem auto;
 }

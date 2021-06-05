@@ -5,9 +5,7 @@ import { render } from "react-dom";
 import "./index.css";
 
 import Hero from"./sections/hero";
-import LookingFor from "./sections/looking-for";
-import SkillSet from "./sections/skill-set"
-import WorkedOn from "./sections/worked-on";
+import AboutMe from "./sections/about-me";
 import Social from "./sections/social";
 
 class App extends PureComponent {
@@ -15,9 +13,7 @@ class App extends PureComponent {
 		return (
 			<Fragment>
                 <Hero />
-                <LookingFor />
-                <SkillSet />
-                <WorkedOn />
+                <AboutMe />
                 <Social />
 			</Fragment>
 		)
