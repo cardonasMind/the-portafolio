@@ -1,0 +1,96 @@
+#skill-set {
+    background: var(--almost-white);
+    padding: 8rem 4rem;
+}
+
+
+
+#skill-set #skill-set__info {
+    display: flex;
+}
+
+#skill-set #skill-set__info .skill-set__info-item {
+    padding: 1rem 2rem;
+    background: #E3E3E3;
+    border: 1px solid var(--text);
+    display: grid;
+    grid-gap: .4rem;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+#skill-set #skill-set__info .skill-set__info-item .skill-set__info-color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--text);
+}
+
+#skill-set #skill-set__info .skill-set__info-item 
+.skill-set__info-color.skill-set__info-color_basic {
+    background-color: var(--sparkle);
+}
+
+#skill-set #skill-set__info .skill-set__info-item 
+.skill-set__info-color.skill-set__info-color_intermedium {
+    background-color: var(--haulm);
+}
+
+#skill-set #skill-set__info .skill-set__info-item 
+.skill-set__info-color.skill-set__info-color_advanced {
+    background-color: var(--gum);
+}
+
+
+
+#skill-set #skill-set__cards {
+    background: linear-gradient(white, var(--bluish));
+    padding: 4rem 2rem;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group {
+    border: 2px solid var(--text);
+    border-radius: .6rem;
+    padding: 1.4rem 1rem .6rem 1rem;
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    margin-top: .6rem;
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items .skill-set__item {
+    border: 2px solid var(--text);
+    border-radius: .4rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: .4rem;
+    align-items: center;
+    padding: .4rem 1rem;
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items .skill-set__item img {
+    width: 2rem;
+}
+
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items 
+.skill-set__item.skill-set__item_basic {
+    background: var(--sparkle);
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items 
+.skill-set__item.skill-set__item_intermedium {
+    background: var(--haulm);
+}
+
+#skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items 
+.skill-set__item.skill-set__item_advanced {
+    background: var(--gum);
+}

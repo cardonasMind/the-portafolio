@@ -1,0 +1,14 @@
+#worked-on {
+    background: var(--almost-white);
+}
+
+#worked-on__title {
+    text-align: center;
+}
+
+#worked-on__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    margin: 4rem;
+}

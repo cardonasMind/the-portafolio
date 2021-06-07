@@ -6,6 +6,8 @@ import "./index.css";
 
 import Hero from"./sections/hero";
 import AboutMe from "./sections/about-me";
+import SkillSet from "./sections/skill-set";
+import WorkedOn from "./sections/worked-on";
 import Social from "./sections/social";
 
 class App extends PureComponent {
@@ -14,6 +16,8 @@ class App extends PureComponent {
 			<Fragment>
                 <Hero />
                 <AboutMe />
+                <SkillSet />
+                <WorkedOn />
                 <Social />
 			</Fragment>
 		)
