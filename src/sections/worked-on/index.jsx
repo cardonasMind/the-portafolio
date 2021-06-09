@@ -1,20 +1,30 @@
-import react from "react";
+import react, { Fragment } from "react";
 
 import "./index.css";
 
 import WorkCard from "./work-card";
 
+import { Santiamen } from "./works-content";
+
 export default function WorkedOn() {
     return (
-        <div id="worked-on">
-            <h1 id="worked-on__title">I've worked on</h1>
-            
-            <div id="worked-on__cards">
-                <WorkCard />
-                <WorkCard />
-                <WorkCard />
-                <WorkCard />
+        <Fragment>
+            <div id="worked-on">
+                <h1 id="worked-on__title">I've worked on</h1>
+
+                <div id="worked-on__cards">
+                    <WorkCard image="/static/images/sections/worked-on/santiamen.png" 
+                        title="Santiamén" short="Fast-food delivery platform">
+                        <Santiamen />
+                    </WorkCard>
+                    <WorkCard image="" 
+                        title="Multi-dimensional places" short="Working on it">
+                        <h1>FDFDFD</h1>
+                    </WorkCard>
+                </div>
             </div>
-        </div>
+            
+            <div id="lightbox" />
+        </Fragment>
     )
 }

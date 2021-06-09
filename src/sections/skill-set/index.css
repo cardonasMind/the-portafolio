@@ -44,12 +44,37 @@
 
 
 #skill-set #skill-set__cards {
-    background: linear-gradient(white, var(--bluish));
+    background: white;
     padding: 4rem 2rem;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-wrap: wrap;
     grid-gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+#skill-set #skill-set__cards::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    
+    animation: wave 4s ease-in alternate infinite;
+}
+
+@keyframes wave {
+    0% { background: var(--bluish) }
+    50% { background: #1484A5 }
+    100% { background: #0A485B }
+}
+
+#skill-set #skill-set__cards::after {
+    content: "";
+    background: linear-gradient(white, transparent);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
 }
 
 #skill-set #skill-set__cards .skill-set__cards-group {

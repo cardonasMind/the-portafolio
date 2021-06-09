@@ -58,6 +58,16 @@ export default function SkillSet() {
                 </div>
                 
                 <div className="skill-set__cards-group">
+                    <p>Version control</p>
+                    
+                    <div className="skill-set__group-items">
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/github.svg" /> Git & GitHub
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="skill-set__cards-group">
                     <p>Frameworks</p>
                     
                     <div className="skill-set__group-items">
@@ -66,16 +76,6 @@ export default function SkillSet() {
                         </div>
                         <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/reactjs.svg" /> ReactJS
-                        </div>
-                    </div>
-                </div>
-                
-                <div className="skill-set__cards-group">
-                    <p>Version control</p>
-                    
-                    <div className="skill-set__group-items">
-                        <div className="skill-set__item skill-set__item_advanced">
-                            <img src="/static/icons/github.svg" /> Git & GitHub
                         </div>
                     </div>
                 </div>

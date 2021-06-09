@@ -39,24 +39,13 @@ h4 {
 
 
 a:link {
-    color: var(--bluish);
+    color: white;
+    background: royalblue;
+    padding: 0 .4rem;
 }
 
 a:visited {
-    color: var(--haulm);
-}
-
-
-
-/*          Text highlight          */
-::-moz-selection { /* Code for Firefox */
-    color: var(--haulm);
-    background: var(--text);
-}
-
-::selection {
-    color: var(--haulm);
-    background: var(--text);
+    color: var(--text);
 }
 
 
@@ -64,7 +53,7 @@ a:visited {
 :root {
     --jet: #0A0A0A;
     --text: #222222;
-    --almost-white: #EBEBEB;
+    --almost-white: #EEEEEE;
     --gum: #FF80EA;
     --sparkle: #12F8D5;
     --bluish: #1FCBFF;

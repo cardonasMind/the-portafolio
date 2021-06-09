@@ -2,12 +2,16 @@ import react from "react";
 
 import "./index.css";
 
-export default function WorkCard() {
+import Lightbox from "./lightbox"
+
+export default function WorkCard({ image, title, short, children }) {
     return (
-        <div className="worked-on__card">
-            <h2>Santiamén</h2>
-            <p>Fast-food delivery platform</p>
-            <button>See it -></button>
+        <div className="worked-on__card" style={{ backgroundImage: `url(${image})` }}>
+            <h2>{title}</h2>
+            <p>{short}</p>
+            <Lightbox>
+                {children}
+            </Lightbox>
         </div>
     )
 }
