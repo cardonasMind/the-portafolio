@@ -16,16 +16,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inknut Antiqua', serif;
+    line-height: 1;
 }
 
 h1 {
 	font-size: 2rem;
-	line-height: 2rem;
 }
 
 h2 {
 	font-size: 1.8rem;
-    line-height: 1.8rem;
 }
 
 h3 {
@@ -58,6 +57,8 @@ a:visited {
     --sparkle: #12F8D5;
     --bluish: #1FCBFF;
     --haulm: #FFD080;
+    
+    --content: 4rem;
 }
 
 
@@ -81,9 +82,20 @@ a:visited {
 
 
 
-@media only screen and (max-width: 991px) {
+
+
+
+/*      Media querys        */
+@media screen and (max-width: 991px) {
     * {
         font-size: 12px;
-        
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --content: 1rem;
     }
 }

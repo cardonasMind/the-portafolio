@@ -1,0 +1,79 @@
+#principal {
+    color: white;
+}
+
+#principal #hero {
+    padding: 2rem var(--content);
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+#principal #hero::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, var(--jet), rgba(0, 0, 0, 0));
+    inset: 0;
+    z-index: -1;
+}
+
+#principal #hero::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, var(--jet), rgba(0, 0, 0, 0));
+    inset: 0;
+    z-index: -1;
+}
+
+#principal #hero h1 {
+    font-size: 10rem;
+    line-height: 1.2;
+    font-weight: 400;
+    width: 50%;
+}
+
+#principal #hero h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#principal #hero h2 img {
+    width: 4rem;
+}
+
+
+
+#principal #about-me {
+    padding: 2rem var(--content);
+}
+
+#principal #about-me p {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+/*      Media querys        */
+@media screen and (max-width: 768px) {
+    #principal #hero {
+        padding-bottom: 0;
+    }
+    
+    #principal #hero h1 {
+        font-size: 5rem;
+    }
+    
+    #principal #hero h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    #principal #hero h2 img {
+        width: 2rem;
+    }
+}

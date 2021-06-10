@@ -17,10 +17,6 @@ export default function WorkedOn() {
                         title="Santiamén" short="Fast-food delivery platform">
                         <Santiamen />
                     </WorkCard>
-                    <WorkCard image="" 
-                        title="Multi-dimensional places" short="Working on it">
-                        <h1>FDFDFD</h1>
-                    </WorkCard>
                 </div>
             </div>
             

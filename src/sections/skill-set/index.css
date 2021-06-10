@@ -1,6 +1,6 @@
 #skill-set {
     background: var(--almost-white);
-    padding: 8rem 4rem;
+    padding: 8rem var(--content);
 }
 
 
@@ -84,8 +84,8 @@
 }
 
 #skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 1rem;
     margin-top: .6rem;
 }
@@ -118,4 +118,16 @@
 #skill-set #skill-set__cards .skill-set__cards-group .skill-set__group-items 
 .skill-set__item.skill-set__item_advanced {
     background: var(--gum);
+}
+
+
+
+
+
+
+/*      Media querys        */
+@media screen and (max-width: 768px) {
+    #skill-set #skill-set__info .skill-set__info-item {
+        padding: 1rem 1.2rem;
+    }
 }

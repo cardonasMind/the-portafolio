@@ -1,0 +1,17 @@
+.worked-on__button {
+    background: var(--gum);
+    color: var(--text);
+    border: 2px solid var(--text);
+    border-radius: .4rem;
+    width: fit-content;
+    padding: .4rem 1.6rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.worked-on__button:hover {
+    transition: .4s;
+    transform: scale3d(1.1, 1.1, 1.1);
+    background: black;
+    color: white;
+}
