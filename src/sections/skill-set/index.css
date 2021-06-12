@@ -4,7 +4,6 @@
 }
 
 
-
 #skill-set #skill-set__info {
     display: flex;
 }
@@ -40,7 +39,6 @@
 .skill-set__info-color.skill-set__info-color_advanced {
     background-color: var(--gum);
 }
-
 
 
 #skill-set #skill-set__cards {

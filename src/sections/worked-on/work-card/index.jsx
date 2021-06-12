@@ -14,7 +14,7 @@ export default function WorkCard({ changeLightboxContent, toggleShowLightbox, im
                     toggleShowLightbox();
                 }}
             >
-                <b>See it</b>
+                <b>See it</b> <img src="/static/icons/enter.svg" />
             </div>
         </div>
     )

@@ -11,7 +11,7 @@
 
 #worked-on__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(40vw, 1fr));
     grid-gap: 4rem;
     margin: 4rem var(--content);
 }
@@ -20,4 +20,29 @@
 
 #lightbox {
     display: none;
+}
+
+#lightbox .image-container {
+    border-left: .4rem solid royalblue;
+    padding: 1rem;
+    background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, .2));
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#lightbox .image-container img {
+    padding: .4rem;
+    background: royalblue;
+}
+
+
+
+
+
+
+/*      Media querys        */
+@media screen and (max-width: 768px) {
+    #worked-on__cards {
+        grid-template-columns: 1fr;
+    }
 }

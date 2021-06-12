@@ -2,6 +2,7 @@
     color: white;
 }
 
+
 #principal #hero {
     padding: 2rem var(--content);
     background-size: cover;
@@ -41,7 +42,6 @@
 #principal #hero h2 img {
     width: 4rem;
 }
-
 
 
 #principal #about-me {

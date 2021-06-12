@@ -1,5 +1,5 @@
 .worked-on__card {
-    height: 80vh;
+    height: 40vw;
     padding-bottom: 2rem;
     background-size: cover;
     color: white;
@@ -31,9 +31,27 @@
     padding: .4rem 1.6rem;
     margin: 0 auto;
     cursor: pointer;
+    display: flex;
+    grid-gap: .4rem;
+    align-items: center;
 }
 
 .worked-on__card .worked-on__button:hover {
-    transition: .2s;
     background: white;
+}
+
+.worked-on__card .worked-on__button img {
+    width: 1rem;
+}
+
+
+
+
+
+
+/*      Media querys        */
+@media screen and (max-width: 768px) {
+    .worked-on__card {
+        height: 80vw;
+    }
 }

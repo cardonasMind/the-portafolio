@@ -14,7 +14,10 @@ export default class extends PureComponent {
 
     toggleShowLightbox = () => this.setState(prevState => ({ showLightbox: !prevState.showLightbox }));
 
-    changeLightboxContent = content => this.setState({ lightboxContent: content });
+    changeLightboxContent = content => {
+        this.setState({ lightboxContent: content });
+        window.scrollTo(0, document.getElementById("worked-on").offsetTop);
+    }
     
     render() {
         const { showLightbox, lightboxContent } = this.state;
@@ -29,7 +32,7 @@ export default class extends PureComponent {
                             toggleShowLightbox={this.toggleShowLightbox} 
                             image="/static/images/sections/worked-on/santiamen/cover.png" 
                             title="Santiamén" short="Fast-food delivery platform">
-                            <Santiamen />
+                            <Santiamen toggleShowLightbox={this.toggleShowLightbox} />
                         </WorkCard>
                     </div>
                 </div>
