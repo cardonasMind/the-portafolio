@@ -1,51 +1,37 @@
-import react, { Fragment } from "react";
+import react from "react";
 
 import "./index.css";
 
+import Header from "../header";
+
 export default function Santiamen() {
     return (
-        <Fragment>
-            <div id="santiamen-project__header">
-                <h1>Santiamén</h1>
-                
-                <p>Santiamén is a colloquial spanish word that means very fast. I found a similar english word which is trice. This was a fast-food delivery platform made using NextJS(witch uses ReactJS) and Firebase, this was mainly for me to learn NextJS, to make a real project and like three months ago I was thinking to make money with the platform but after many interviews with fast-food business owners I realize this was not the best idea, maybe for the moment.</p>
-            </div>
+        <div id="santiamen-project">
+            <Header />
             
             <div id="santiamen-project__content">
-                <div>
-                    <h2>Here you're client</h2>
+                <h1>Santiamén</h1>
+                <p>Santiamén is a colloquial spanish word that means very fast. 
+                I found a similar english word which is trice.</p> 
 
-                    <iframe 
-                        frameborder="0"
-                        id="inlineFrameExample"
-                        title="Inline Frame Example"
-                        width="340px"
-                        height="600px"
-                        src="https://www.santiamen.ml">
-                    </iframe>
-                </div>
-            
-                <div>
-                    <h2>Business owner demo (under construction)</h2>
+                <p>I started this project last year in early October. I remember these times a lot because at that time I started this project with the idea of making money and with all the quarantine and that I live in a town where there was no such thing as a delivery platform like Rappi or something like that, Well I did.</p>
 
-                    <iframe 
-                        frameborder="0"
-                        id="inlineFrameExample"
-                        title="Inline Frame Example"
-                        width="340px"
-                        height="600px"
-                        src="https://www.santiamen.ml/demo">
-                    </iframe>
-                </div>
+                <p>For me these where times of a lot of learning and growing wich someone uneducated could consider as "mistakes”. I learned both the technical part and the human one, since I did everything, from codding to contact local business.</p>
+
+                <img src="/static/images/sections/worked-on/santiamen/santiamen-mvp.gif" />
+                <p>This was the first (really hasty) version, code was a disaster as well as the design (sort of) Check it by your own: <a href="https://santiamen-3fukott7r.vercel.app/" target="_blank">https://santiamen-3fukott7r.vercel.app/</a> (resize screen to mobile)</p>
+
+                <img src="/static/images/sections/worked-on/santiamen/santiamen-order-stages.gif" />
+                <p>Then due to a business owner request I implemented a order status wich allows clients (business clients, not mine in the first place) to know the state of their order, (when was being prepared, shipped and that)</p>
+
+                <p>At the time, last update was on December 11, 2020. I should mention that this is an abandoned project wich brought me a loooot of grownth.</p>
+
+                <img src="/static/images/sections/worked-on/santiamen/santiamen-now.png" />
+                <p>This is how it looks like right now. Check it yourself here: <a herf="https://www.santiamen.ml" target="_blank">https://www.santiamen.ml</a> (resize screen to mobile)</p>
+
+                <img src="/static/images/sections/worked-on/santiamen/santiamen-business.gif" />
+                <p>And this is how business owners panel looks like.</p>
             </div>
-            
-            <h1>Santiamén</h1>
-                
-                <p>Santiamén is a colloquial spanish word that means very fast. I found a similar english word which is trice. This was a fast-food delivery platform made using NextJS(witch uses ReactJS) and Firebase, this was mainly for me to learn NextJS, to make a real project and like three months ago I was thinking to make money with the platform but after many interviews with fast-food business owners I realize this was not the best idea, maybe for the moment.</p>
-            
-            <h1>Santiamén</h1>
-                
-                <p>Santiamén is a colloquial spanish word that means very fast. I found a similar english word which is trice. This was a fast-food delivery platform made using NextJS(witch uses ReactJS) and Firebase, this was mainly for me to learn NextJS, to make a real project and like three months ago I was thinking to make money with the platform but after many interviews with fast-food business owners I realize this was not the best idea, maybe for the moment.</p>
-        </Fragment>
+        </div>
     )
 }
