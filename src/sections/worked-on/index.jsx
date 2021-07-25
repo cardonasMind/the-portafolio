@@ -4,7 +4,7 @@ import "./index.css";
 
 import WorkCard from "./work-card";
 
-import { Santiamen } from "./works-content";
+import { Santiamen, Halabalval } from "./works-content";
 
 export default class extends PureComponent {
     state = {
@@ -33,6 +33,12 @@ export default class extends PureComponent {
                             image="/static/images/sections/worked-on/santiamen/cover.png" 
                             title="Santiamén" short="Fast-food delivery platform">
                             <Santiamen toggleShowLightbox={this.toggleShowLightbox} />
+                        </WorkCard>
+                        <WorkCard changeLightboxContent={this.changeLightboxContent}
+                            toggleShowLightbox={this.toggleShowLightbox} 
+                            image="/static/images/sections/worked-on/halabalval/cover.png" 
+                            title="♒️ HALABALVAL ♒️" short="The Countries Quiz Game">
+                            <Halabalval toggleShowLightbox={this.toggleShowLightbox} />
                         </WorkCard>
                     </div>
                 </div>
