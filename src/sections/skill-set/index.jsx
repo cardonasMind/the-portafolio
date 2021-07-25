@@ -19,9 +19,12 @@ export default function SkillSet() {
             
             <div id="skill-set__cards">
                 <div className="skill-set__cards-group">
-                    <p>Design</p>
+                    <p>Organization, planning, design</p>
                     
                     <div className="skill-set__group-items">
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/notion.svg" /> Notion (SCRUM - Kanban)
+                        </div>
                         <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/figma.svg" /> Figma
                         </div>
@@ -41,18 +44,34 @@ export default function SkillSet() {
                         <div className="skill-set__item skill-set__item_advanced">
                             <img src="/static/icons/skills/css3.svg" /> CSS3
                         </div>
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/skills/javascript.svg" /> JavaScript
+                        </div>
                     </div>
                 </div>
                 
                 <div className="skill-set__cards-group">
-                    <p>Programming languages</p>
+                    <p>Libraries</p>
                     
                     <div className="skill-set__group-items">
-                        <div className="skill-set__item skill-set__item_advanced">
-                            <img src="/static/icons/skills/javascript.svg" /> JavaScript
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/reactjs.svg" /> ReactJS
                         </div>
-                        <div className="skill-set__item skill-set__item_basic">
-                            <img src="/static/icons/skills/python.svg" /> Python
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/skills/redux.svg" /> Redux | React-Redux
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="skill-set__cards-group">
+                    <p>Superpowers</p>
+                    
+                    <div className="skill-set__group-items">
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/nextjs.svg" /> NextJS
+                        </div>
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/sass.svg" /> SASS
                         </div>
                     </div>
                 </div>
@@ -68,22 +87,15 @@ export default function SkillSet() {
                 </div>
                 
                 <div className="skill-set__cards-group">
-                    <p>Frameworks</p>
-                    
-                    <div className="skill-set__group-items">
-                        <div className="skill-set__item skill-set__item_intermedium">
-                            <img src="/static/icons/skills/nextjs.svg" /> NextJS
-                        </div>
-                        <div className="skill-set__item skill-set__item_intermedium">
-                            <img src="/static/icons/skills/reactjs.svg" /> ReactJS
-                        </div>
-                    </div>
-                </div>
-                
-                <div className="skill-set__cards-group">
                     <p>Utilities</p>
                     
                     <div className="skill-set__group-items">
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/skills/bem.svg" /> BEM Methodology
+                        </div>
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/rest.svg" /> RESTfullAPIs
+                        </div>
                         <div className="skill-set__item skill-set__item_basic">
                             <img src="/static/icons/skills/nodejs.svg" /> NodeJS
                         </div>
@@ -93,11 +105,21 @@ export default function SkillSet() {
                         <div className="skill-set__item skill-set__item_basic">
                             <img src="/static/icons/skills/webpack.svg" /> Webpack
                         </div>
-                        <div className="skill-set__item skill-set__item_basic">
-                            <img src="/static/icons/skills/sass.svg" /> Sass
-                        </div>
                         <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/firebase.svg" /> Firebase
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="skill-set__cards-group">
+                    <p>Spoken languages</p>
+                    
+                    <div className="skill-set__group-items">
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/colombia-flag.svg" /> Spanish (native)
+                        </div>
+                        <div className="skill-set__item skill-set__item_advanced">
+                            <img src="/static/icons/skills/english-language.svg" /> English (C2)
                         </div>
                     </div>
                 </div>
