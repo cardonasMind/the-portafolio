@@ -31,13 +31,15 @@ export default class extends PureComponent {
                         <WorkCard changeLightboxContent={this.changeLightboxContent}
                             toggleShowLightbox={this.toggleShowLightbox} 
                             image="/static/images/sections/worked-on/santiamen/cover.png" 
-                            title="Santiamén" short="Fast-food delivery platform">
+                            title="Santiamén" short="Fast-food delivery platform"
+                            link="https://santiamen.ml/">
                             <Santiamen toggleShowLightbox={this.toggleShowLightbox} />
                         </WorkCard>
                         <WorkCard changeLightboxContent={this.changeLightboxContent}
                             toggleShowLightbox={this.toggleShowLightbox} 
                             image="/static/images/sections/worked-on/halabalval/cover.png" 
-                            title="♒️ HALABALVAL ♒️" short="The Countries Quiz Game">
+                            title="♒️ HALABALVAL ♒️" short="The Countries Quiz Game"
+                            link="https://halabalval.vercel.app/welcome">
                             <Halabalval toggleShowLightbox={this.toggleShowLightbox} />
                         </WorkCard>
                     </div>
