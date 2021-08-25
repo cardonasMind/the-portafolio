@@ -1,6 +1,6 @@
 {
-	"name": "diego-cardona-portafolio",
-	"version": "0.0.2",
+	"name": "diego-cardona-portfolio",
+	"version": "0.0.3",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build"
@@ -12,7 +12,7 @@
 	},
 	"license": "ISC",
 	"keywords": [],
-	"description": "The Diego Cardona Portafolio",
+	"description": "Diego Cardona Portfolio",
 	"browserslist": {
 		"production": [
 			">0.2%",

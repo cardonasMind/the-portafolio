@@ -26,6 +26,9 @@ export default function SkillSet() {
                             <img src="/static/icons/skills/notion.svg" /> Notion (SCRUM - Kanban)
                         </div>
                         <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/adobexd.svg" /> Adobe Xd
+                        </div>
+                        <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/figma.svg" /> Figma
                         </div>
                         <div className="skill-set__item skill-set__item_intermedium">
@@ -46,6 +49,9 @@ export default function SkillSet() {
                         </div>
                         <div className="skill-set__item skill-set__item_advanced">
                             <img src="/static/icons/skills/javascript.svg" /> JavaScript
+                        </div>
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/typescript.svg" /> TypeScript
                         </div>
                     </div>
                 </div>
@@ -107,6 +113,9 @@ export default function SkillSet() {
                         </div>
                         <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/firebase.svg" /> Firebase
+                        </div>
+                        <div className="skill-set__item skill-set__item_intermedium">
+                            <img src="/static/icons/skills/tailwindcss.svg" /> TailwindCSS
                         </div>
                     </div>
                 </div>
