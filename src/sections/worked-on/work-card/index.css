@@ -22,28 +22,52 @@
     z-index: -1;
 }
 
+.worked-on__card .worked-on__buttons {
+    display: flex;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
 
-.worked-on__card .worked-on__button {
+
+.worked-on__card .worked-on__buttons .see-it__button {
+    background: white;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    grid-gap: .4rem;
+    align-items: center;
+    padding: .4rem 1.6rem;
+}
+
+.worked-on__card .worked-on__buttons .see-it__button:hover {
+    background: linear-gradient(white, rgba(255, 255, 255, .6));
+}
+
+.worked-on__card .worked-on__buttons .see-it__button img {
+    width: 1.2rem;
+}
+
+
+.worked-on__card .worked-on__buttons .about-it__button img {
+    width: 1rem;
+}
+
+
+.worked-on__card .worked-on__buttons .about-it__button {
     background: linear-gradient(var(--gum), var(--bluish));
     color: var(--text);
     border-radius: .2rem;
-    width: fit-content;
     padding: .4rem 1.6rem;
-    margin: 0 auto;
     cursor: pointer;
     display: flex;
     grid-gap: .4rem;
     align-items: center;
 }
 
-.worked-on__card .worked-on__button:hover {
+.worked-on__card .worked-on__buttons .about-it__button:hover {
     background: white;
 }
-
-.worked-on__card .worked-on__button img {
-    width: 1rem;
-}
-
 
 
 
