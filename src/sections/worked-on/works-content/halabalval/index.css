@@ -1,9 +1,14 @@
 #halabalval-project__content {
-    text-align: center;
     padding: 2rem var(--content);
+    text-align: justify;
 }
 
 #halabalval-project__content h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#halabalval-project__content h2 {
     margin-bottom: 1rem;
 }
 
