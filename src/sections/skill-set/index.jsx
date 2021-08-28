@@ -117,6 +117,12 @@ export default function SkillSet() {
                         <div className="skill-set__item skill-set__item_intermedium">
                             <img src="/static/icons/skills/tailwindcss.svg" /> TailwindCSS
                         </div>
+                        <div className="skill-set__item skill-set__item_basic">
+                            <img src="/static/icons/skills/expressjs.svg" /> ExpressJS
+                        </div>
+                        <div className="skill-set__item skill-set__item_basic">
+                            <img src="/static/icons/skills/socketio.svg" /> SocketIO
+                        </div>
                     </div>
                 </div>
                 
