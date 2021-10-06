@@ -1,6 +1,6 @@
 import { PureComponent, Fragment } from "react";
 
-import "./index.css";
+//import "./index.css";
 
 import WorkCard from "./work-card";
 

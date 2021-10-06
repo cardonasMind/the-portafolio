@@ -1,6 +1,6 @@
 import react from "react";
 
-import "./index.css";
+//import "./index.css";
 
 export default function Header({ toggleShowLightbox, repo, thanks }) {
     const projectHeaderBackground = { backgroundImage: `url(${"/static/images/sections/worked-on/header.jpg"})` };

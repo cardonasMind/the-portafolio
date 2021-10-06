@@ -1,6 +1,6 @@
 import react from "react";
 
-import "./index.css";
+//import "./index.css";
 
 export default function WorkCard({ changeLightboxContent, toggleShowLightbox, image, title, short, link, children }) {
     return (

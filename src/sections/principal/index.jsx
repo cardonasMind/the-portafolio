@@ -1,6 +1,6 @@
 import react from "react";
 
-import "./index.css";
+//import "./index.css";
 
 export default function Principal() {
     const heroBackground = { backgroundImage: `url(${"/static/images/sections/hero.jpg"})` };

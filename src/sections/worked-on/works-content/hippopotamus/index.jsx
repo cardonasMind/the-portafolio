@@ -1,6 +1,6 @@
 import react from "react";
 
-import "./index.css";
+//import "./index.css";
 
 import Header from "../header";
 
