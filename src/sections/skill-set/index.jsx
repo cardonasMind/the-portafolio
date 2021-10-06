@@ -1,8 +1,103 @@
 import react from "react";
 
-//import "./index.css";
+/*
+	Every group is a object {} inside the array skillSetData
+	Group has title and skills which is an array of objects [{}, {}, {}], every object is a specific skill
+	knowledge in skill is:
+		0: Basic
+		1: Intermedium
+		2: ADVANCED
+*/
+const skillSetData = [
+	{
+		title: "Organization, planning, design",
+		skills: [
+			{
+				icon: "/static/icons/skills/notion.svg",
+				name: "Notion (SCRUM - Kanban)",
+				knowledge: 1
+			},
+			{
+				
+			}
+		]
+	},
+	{
+		title: "Base",
+		skills: []
+	},
+	{
+		title: "Libraries",
+		skills: []
+	},
+	{
+		title: "Superpowers",
+		skills: []
+	},
+	{
+		title: "Version control",
+		skills: []
+	},
+	{
+		title: "Utilities",
+		skills: []
+	},
+	{
+		title: "Spoken languages",
+		skills: [
+			{
+				icon: "/static/icons/colombia-flag.svg",
+				name: "Spanish (native)",
+				knowledge: 2
+			},
+			{
+				icon: "/static/icons/skills/english-language.svg",
+				name: "English (C2)",
+				knowledge: 2
+			}
+		]
+	}
+];
 
-export default function SkillSet() {
+const SkillSetSection = () => (
+	<div id="skill-set">
+		<div id="skill-set__info">
+			<div className="bg-blue-400">
+				<p>BASIC</p>
+            </div>
+            <div className="bg-red-400">
+                <p>INTERMEDIUM</p>
+            </div>
+            <div className="bg-green-400">
+				<p>ADVANCED</p>
+            </div>
+		</div>
+		
+		<div id="skill-set__groups">
+			{
+				skillSetData.map((group, index) => 
+					<div key={index} className="border border-black p-2 m-4 skill-set__cards-group">
+						<p>{group.title}</p>
+						
+						<div className="skill-set__group-items">
+						{
+							group.skills.map((skill, index) => 
+								<div className="skill-set__item skill-set__item_intermedium">
+									<img src={skill.icon} className="w-10"/> <p>{skill.name}</p>
+								</div>
+							)
+						}
+						</div>
+					</div>
+				)
+			}
+		</div>
+	</div>
+);
+
+export default SkillSetSection;
+
+/*export default function SkillSet() {
     return (
         <div id="skill-set">
             <div id="skill-set__info">
@@ -125,20 +220,7 @@ export default function SkillSet() {
                         </div>
                     </div>
                 </div>
-                
-                <div className="skill-set__cards-group">
-                    <p>Spoken languages</p>
-                    
-                    <div className="skill-set__group-items">
-                        <div className="skill-set__item skill-set__item_advanced">
-                            <img src="/static/icons/colombia-flag.svg" /> Spanish (native)
-                        </div>
-                        <div className="skill-set__item skill-set__item_advanced">
-                            <img src="/static/icons/skills/english-language.svg" /> English (C2)
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     )
-}
+}*/

@@ -6,11 +6,12 @@ import WorkedOn from "../src/sections/worked-on";
 import Social from "../src/sections/social";
 
 export default class extends PureComponent {
-  render() {
-    return (
-      <Fragment>
-        <Social />
-      </Fragment>
-    );
-  }
+	render() {
+		return (
+			<Fragment>
+				<SkillSet />
+				<Social />
+			</Fragment>
+		);
+	}
 }

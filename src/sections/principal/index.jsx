@@ -3,7 +3,7 @@ import react from "react";
 const PrincipalSection = () => (
 	<div id="principal">
         <div id="hero">
-            <h1 className="text-9xl">Diego Cardona</h1>
+            <h1 className="text-9xl font-serif">Diego Cardona</h1>
             <h2>Front-end developer <img className="w-4" src="/static/icons/colombia-flag.svg" /></h2>
 		</div>
             
@@ -20,6 +20,6 @@ const PrincipalSection = () => (
                 <p>I am self-taught and I am very proud of it because I learn at the same time as I do and I really enjoy doing things, my brain is very wild in that sense. I think doing things like this has allowed me to shape my thinking and learn things that can only be learned by doing and doing.</p>
         </div>
     </div>
-)
+);
 
 export default PrincipalSection;
