@@ -9,9 +9,6 @@ export default class extends PureComponent {
   render() {
     return (
       <Fragment>
-        <Principal />
-        <SkillSet />
-        <WorkedOn />
         <Social />
       </Fragment>
     );
