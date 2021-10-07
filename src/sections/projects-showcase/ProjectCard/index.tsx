@@ -1,14 +1,28 @@
-import react from "react";
+import React from "react";
 
-//import "./index.css";
+interface IProjectCardProps {
+	image: string
+	title: string
+	short: string 
+	link: string 
+}
 
-export default function WorkCard({ changeLightboxContent, toggleShowLightbox, image, title, short, link, children }) {
-    return (
-        <div className="worked-on__card" style={{ backgroundImage: `url(${image})` }}>
+const ProjectCard = ({ image, title, short, link }: IProjectCardProps) => {
+	return (
+		<div className="worked-on__card" style={{ backgroundImage: `url(${image})` }}>
             <h2>{title}</h2>
             <p>{short}</p>
-            
-            <div className="worked-on__buttons">
+        </div>
+	);
+}
+
+export default ProjectCard;
+
+
+
+/*function WorkCard({ changeLightboxContent, toggleShowLightbox, image, title, short, link, children }) {
+    return (
+        <div className="worked-on__buttons">
                 <a className="see-it__button" href={link} target="_blank">
                     <b>See it</b> <img src="/static/icons/external-link.svg" />
                 </a>
@@ -21,6 +35,5 @@ export default function WorkCard({ changeLightboxContent, toggleShowLightbox, im
                     <p>About it</p> <img src="/static/icons/enter.svg" />
                 </div>
             </div>
-        </div>
     )
-}
+}*/

@@ -1,15 +1,45 @@
 import { PureComponent, Fragment } from "react";
 
-//import "./index.css";
-
-import WorkCard from "./work-card";
+import PrintProjects from "./PrintProjects";
 
 import { Santiamen, Halabalval, Hippopotamus } from "./works-content";
+
+/*
+
+image: string
+title: string
+short: string 
+link: string 
+content: React Element
+breathing?: string "0.0.1"
+
+*/
 
 export default class extends PureComponent {
     state = {
         showLightbox: false,
-        lightboxContent: undefined
+        lightboxContent: undefined,
+		
+		projectsData: [
+			{
+				image: "/static/images/sections/worked-on/hippopotamus/cover.png",
+				title: "Hippopotamus 💬",
+				short: "Real-time chat.",
+				link: "https://hippopotamus-client.vercel.app"
+			},
+			{
+				image: "/static/images/sections/worked-on/halabalval/cover.png",
+				title: "♒️ HALABALVAL ♒️",
+				short: "The Countries Quiz Game",
+				link: "https://halabalval.vercel.app/welcome"
+			},
+			{
+				image: "/static/images/sections/worked-on/santiamen/cover.png",
+				title: "Santiamén",
+				short: "Fast-food delivery platform",
+				link: "https://santiamen.ml/"
+			}
+		]
     }
 
     toggleShowLightbox = () => this.setState(prevState => ({ showLightbox: !prevState.showLightbox }));
@@ -20,38 +50,14 @@ export default class extends PureComponent {
     }
     
     render() {
-        const { showLightbox, lightboxContent } = this.state;
+        const { showLightbox, lightboxContent, projectsData } = this.state;
         
         return (
             <Fragment>
                 <div id="worked-on" style={{ display: showLightbox ? "none" : "block" }}>
-                    <h1 id="worked-on__title">Projects showcase</h1>
+                    <h1 id="worked-on__title">Projects Showcase</h1>
 
-                    <div id="worked-on__cards">
-                        <WorkCard changeLightboxContent={this.changeLightboxContent}
-                            toggleShowLightbox={this.toggleShowLightbox} 
-                            image="/static/images/sections/worked-on/hippopotamus/cover.png" 
-                            title="Hippopotamus 💬" short="Real-time chat."
-                            link="https://hippopotamus-client.vercel.app">
-                            <Hippopotamus toggleShowLightbox={this.toggleShowLightbox} />
-                        </WorkCard>
-
-                        <WorkCard changeLightboxContent={this.changeLightboxContent}
-                            toggleShowLightbox={this.toggleShowLightbox} 
-                            image="/static/images/sections/worked-on/halabalval/cover.png" 
-                            title="♒️ HALABALVAL ♒️" short="The Countries Quiz Game"
-                            link="https://halabalval.vercel.app/welcome">
-                            <Halabalval toggleShowLightbox={this.toggleShowLightbox} />
-                        </WorkCard>
-
-                        <WorkCard changeLightboxContent={this.changeLightboxContent}
-                            toggleShowLightbox={this.toggleShowLightbox} 
-                            image="/static/images/sections/worked-on/santiamen/cover.png" 
-                            title="Santiamén" short="Fast-food delivery platform"
-                            link="https://santiamen.ml/">
-                            <Santiamen toggleShowLightbox={this.toggleShowLightbox} />
-                        </WorkCard>
-                    </div>
+                    <PrintProjects projectsData={projectsData} />
                 </div>
 
                 <div id="lightbox" style={{ display: showLightbox ? "block" : "none" }}>
