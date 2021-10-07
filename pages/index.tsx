@@ -1,6 +1,6 @@
 import { PureComponent, Fragment } from "react";
 
-import { Principal, SkillSet, WorkedOn, Social } from "../src/sections";
+import { Principal, SkillSet, ProjectsShowcase, Social } from "../src/sections";
 
 export default class extends PureComponent {
 	render() {
@@ -8,6 +8,7 @@ export default class extends PureComponent {
 			<Fragment>
 				<Principal />
 				<SkillSet />
+				<ProjectsShowcase />
 				<Social />
 			</Fragment>
 		);
