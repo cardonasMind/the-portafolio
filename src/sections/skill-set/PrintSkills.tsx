@@ -16,10 +16,10 @@ const PrintSkills = (props: IPrintSkillsProps) => {
         <Fragment>
             {
                 skillSetData.map((group, index) => 
-                    <div key={index} className="border border-black p-2 m-4 skill-set__cards-group">
-                        <p>{group.title}</p>
+                    <div key={index} className="border border-black">
+                        <p className="border-b border-black pl-4">{group.title}</p>
                                     
-                        <div className="skill-set__group-items">
+                        <div className="flex space-x-4 p-4">
                             {
                                 group.skills.map((skill, index) => 
                                     <SkillItem key={index} {...skill} />

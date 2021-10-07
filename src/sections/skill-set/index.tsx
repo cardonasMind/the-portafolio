@@ -175,20 +175,20 @@ export default class extends PureComponent {
         const { skillSetData } = this.state;
 
         return (
-            <div id="skill-set">
-                <div id="skill-set__info">
-                    <div className="bg-blue-400">
+            <div className="m-4">
+                <div className="flex space-x-2 mb-4">
+                    <div className="border border-black px-2 bg-gradient-to-r from-gray-400 to-blue-200">
                         <p>BASIC</p>
                     </div>
-                    <div className="bg-red-400">
+                    <div className="border border-black px-2 bg-gradient-to-r from-blue-200 to-yellow-400">
                         <p>INTERMEDIUM</p>
                     </div>
-                    <div className="bg-green-400">
+                    <div className="border border-black px-2 bg-gradient-to-r from-yellow-400 to-yellow-600">
                         <p>ADVANCED</p>
                     </div>
                 </div>
                 
-                <div id="skill-set__groups">
+                <div className="flex flex-wrap space-x-4 space-y-4">
                     <PrintSkills skillSetData={skillSetData} />
                 </div>
             </div>

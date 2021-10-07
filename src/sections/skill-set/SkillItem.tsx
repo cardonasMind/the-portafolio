@@ -7,11 +7,36 @@ interface ISkillItemProps {
 }
 
 const SkillItem = ({ icon, name, knowledge }: ISkillItemProps) => {
-    return (
-        <div className="inline-block bg-yellow-400 m-4 skill-set__item skill-set__item_intermedium">
-			<img src={icon} className="w-8"/> <p>{name}</p>
-		</div>
-    );
+	switch(knowledge) {
+		case 0: 
+			return (
+				<div className="flex space-x-2 px-2 bg-gradient-to-r from-gray-400 to-blue-200">
+					<img src={icon} className="w-8"/> <p>{name}</p>
+				</div>
+			);
+			
+		case 1: 
+			return (
+				<div className="flex space-x-2 px-2 bg-gradient-to-r from-blue-200 to-yellow-400">
+					<img src={icon} className="w-8"/> <p>{name}</p>
+				</div>
+			);
+			
+		case 2: 
+			return (
+				<div className="flex space-x-2 px-2 bg-gradient-to-r from-yellow-400 to-yellow-600">
+					<img src={icon} className="w-8"/> <p>{name}</p>
+				</div>
+			);
+	}
+	
+    
 }
 
 export default SkillItem;
+
+/*
+BASIC from-gray-400 to-blue-200
+INTERMEDIUM from-blue-400 to-purple-400
+ADVANCED
+*/
