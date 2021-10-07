@@ -1,9 +1,13 @@
 import react from "react";
 
+import GoProjectsButton from "./GoProjectsButton";
+
 const PrincipalSection = () => (
-	<div id="principal">
+	<div className="px-4">
+		<GoProjectsButton />
+		
         <div id="hero">
-            <h1 className="text-9xl font-serif">Diego Cardona</h1>
+            <h1 className="text-9xl w-20 font-serif">Diego Cardona</h1>
             <h2>Front-end developer <img className="w-4" src="/static/icons/colombia-flag.svg" /></h2>
 		</div>
             
