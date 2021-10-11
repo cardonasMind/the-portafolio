@@ -28,6 +28,9 @@ const SkillItem = ({ icon, name, knowledge }: ISkillItemProps) => {
 					<img src={icon} className="w-8"/> <p>{name}</p>
 				</div>
 			);
+			
+		default:
+			return null;
 	}
 	
     
