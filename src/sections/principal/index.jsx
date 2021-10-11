@@ -7,7 +7,7 @@ const PrincipalSection = () => (
 		<GoProjectsButton />
 		
         <div id="hero">
-            <h1 className="text-9xl w-20 font-serif">Diego Cardona</h1>
+            <h1 className="text-9xl w-1/2">Diego Cardona</h1>
             <h2>Front-end developer <img className="w-4" src="/static/icons/colombia-flag.svg" /></h2>
 		</div>
             
