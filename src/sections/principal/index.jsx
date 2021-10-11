@@ -22,6 +22,17 @@ const PrincipalSection = () => (
                 <a href="/static/Platzi-front-end.pdf" target="_blank">Click to see the certificate</a></p>
 
                 <p>I am self-taught and I am very proud of it because I learn at the same time as I do and I really enjoy doing things, my brain is very wild in that sense. I think doing things like this has allowed me to shape my thinking and learn things that can only be learned by doing and doing.</p>
+				
+				<div className="grid grid-cols-2 gap-4">
+					<div className="border border-black p-4">
+						<img src="/static/images/sections/principal/minecraft.png" />
+						<p>_</p>
+					</div>
+					<div className="border border-black p-4">
+						<img src="/static/images/sections/principal/samp.jpg" />
+						<p>_</p>
+					</div>
+				</div>
         </div>
     </div>
 );
