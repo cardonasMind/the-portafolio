@@ -19,7 +19,7 @@ const PrintSkills = (props: IPrintSkillsProps) => {
                     <div key={index} className="border border-black">
                         <p className="border-b border-black pl-4">{group.title}</p>
                                     
-                        <div className="flex space-x-4 p-4">
+                        <div className="flex flex-wrap gap-4 p-4">
                             {
                                 group.skills.map((skill, index) => 
                                     <SkillItem key={index} {...skill} />

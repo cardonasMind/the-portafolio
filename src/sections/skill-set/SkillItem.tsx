@@ -10,21 +10,21 @@ const SkillItem = ({ icon, name, knowledge }: ISkillItemProps) => {
 	switch(knowledge) {
 		case 0: 
 			return (
-				<div className="flex space-x-2 px-2 bg-gradient-to-r from-gray-400 to-blue-200">
+				<div className="flex space-x-2 items-center px-2 bg-blueSky">
 					<img src={icon} className="w-8"/> <p>{name}</p>
 				</div>
 			);
 			
 		case 1: 
 			return (
-				<div className="flex space-x-2 px-2 bg-gradient-to-r from-blue-200 to-yellow-400">
+				<div className="flex space-x-2 items-center px-2 bg-militar">
 					<img src={icon} className="w-8"/> <p>{name}</p>
 				</div>
 			);
 			
 		case 2: 
 			return (
-				<div className="flex space-x-2 px-2 bg-gradient-to-r from-yellow-400 to-yellow-600">
+				<div className="flex space-x-2 items-center px-2 bg-terracotta">
 					<img src={icon} className="w-8"/> <p>{name}</p>
 				</div>
 			);
@@ -37,9 +37,3 @@ const SkillItem = ({ icon, name, knowledge }: ISkillItemProps) => {
 }
 
 export default SkillItem;
-
-/*
-BASIC from-gray-400 to-blue-200
-INTERMEDIUM from-blue-400 to-purple-400
-ADVANCED
-*/

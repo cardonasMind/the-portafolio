@@ -177,13 +177,13 @@ export default class extends PureComponent {
         return (
             <div className="m-4">
                 <div className="flex space-x-2 mb-4">
-                    <div className="border border-black px-2 bg-gradient-to-r from-gray-400 to-blue-200">
+                    <div className="border border-black px-2 bg-blueSky">
                         <p>BASIC</p>
                     </div>
-                    <div className="border border-black px-2 bg-gradient-to-r from-blue-200 to-yellow-400">
+                    <div className="border border-black px-2 bg-militar">
                         <p>INTERMEDIUM</p>
                     </div>
-                    <div className="border border-black px-2 bg-gradient-to-r from-yellow-400 to-yellow-600">
+                    <div className="border border-black px-2 bg-terracotta">
                         <p>ADVANCED</p>
                     </div>
                 </div>
