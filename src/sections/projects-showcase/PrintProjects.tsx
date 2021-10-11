@@ -15,12 +15,10 @@ const PrintProjects = (props: IPrintProjectsProps) => {
     const { projectsData } = props;
 
     return (
-        <div id="worked-on__cards">
+        <div className="m-4 grid grid-cols-2 gap-4">
             {
                 projectsData.map((project, index) => 
-					<ProjectCard key={index} {...project}>
-					
-                    </ProjectCard>
+					<ProjectCard key={index} {...project} />
                 )
             }
         </div>

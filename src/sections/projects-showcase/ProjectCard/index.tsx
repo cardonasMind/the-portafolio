@@ -9,7 +9,7 @@ interface IProjectCardProps {
 
 const ProjectCard = ({ image, title, short, link }: IProjectCardProps) => {
 	return (
-		<div className="worked-on__card" style={{ backgroundImage: `url(${image})` }}>
+		<div className="h-80 border border-black" style={{ backgroundImage: `url(${image})` }}>
             <h2>{title}</h2>
             <p>{short}</p>
         </div>

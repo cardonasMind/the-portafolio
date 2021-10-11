@@ -55,7 +55,7 @@ export default class extends PureComponent {
         return (
             <Fragment>
                 <div id="worked-on" style={{ display: showLightbox ? "none" : "block" }}>
-                    <h1 id="worked-on__title">Projects Showcase</h1>
+                    <h1 className="text-2xl text-center">Projects Showcase</h1>
 
                     <PrintProjects projectsData={projectsData} />
                 </div>
