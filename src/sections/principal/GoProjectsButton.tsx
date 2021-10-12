@@ -2,7 +2,7 @@ import React from "react";
 
 const GoProjectsButton = () => {
 	const handleButton = () => {
-		document.getElementById("projects").scrollIntoView(); //Not sure about this because Refs exists in React
+		document.getElementById("projects")!.scrollIntoView(); //Not sure about this because Refs exists in React
 	}
 	
 	return (
