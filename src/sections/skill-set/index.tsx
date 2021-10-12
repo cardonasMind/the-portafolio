@@ -175,7 +175,7 @@ export default class extends PureComponent {
         const { skillSetData } = this.state;
 
         return (
-            <div className="m-4">
+            <div className="mx-4 my-24">
                 <div className="flex space-x-2 mb-4">
                     <div className="border border-black px-2 bg-blueSky">
                         <p>BASIC</p>
