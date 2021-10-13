@@ -6,10 +6,10 @@ const PrincipalSection = () => (
 	<div className="px-4">
 		<GoProjectsButton />
 		
-        <div className="pb-8">
-			<h1 className="mb-4 text-9xl text-yellow-400">Diego</h1>
-            <h1 className="text-9xl text-blue-800">Cardona</h1>
-            <h2 className="mt-8 text-6xl text-red-600 flex gap-4 content-center">Front-end developer <img className="w-16" src="/static/icons/colombia-flag.svg" /></h2>
+        <div className="py-8">
+			<h1 className="mb-4 text-6xl md:text-9xl text-yellow-400">Diego</h1>
+            <h1 className="text-6xl md:text-9xl text-blue-800">Cardona</h1>
+            <h2 className="mt-4 md:mt-8 text-3xl md:text-6xl text-red-600 flex gap-4 content-center">Front-end developer <img className="w-8 md:w-16" src="/static/icons/colombia-flag.svg" /></h2>
 		</div>
             
 		<div className="space-y-4 text-justify">
@@ -25,7 +25,7 @@ const PrincipalSection = () => (
 
             <p>I am self-taught and I am very proud of it because I learn at the same time as I do and I really enjoy doing things, my brain is very wild in that sense. I think doing things like this has allowed me to shape my thinking and learn things that can only be learned by doing and doing.</p>
 				
-			<div className="grid grid-cols-2 gap-4">
+			<div className="grid md:grid-cols-2 gap-4">
 				<div className="border border-black p-4">
 					<img src="/static/images/sections/principal/minecraft.png" className="mb-4" />
 					<p>This is a Minecraft One-Command block "thing". As you can see, there is a extrange construction which was made from copy and pasting one command. Which of course I programmed</p>
