@@ -17,7 +17,7 @@ const PrintSkills = (props: IPrintSkillsProps) => {
             {
                 skillSetData.map((group, index) => 
                     <div key={index} className="border border-black">
-                        <p className="border-b border-black pl-4 bg-blue-50">{group.title}</p>
+                        <p className="border-b border-black pl-4 bg-blue-100">{group.title}</p>
                                     
                         <div className="flex flex-wrap gap-4 p-4">
                             {
