@@ -2,7 +2,7 @@ import { PureComponent, Fragment } from "react";
 
 import PrintProjects from "./PrintProjects";
 
-import { Santiamen, Halabalval, Hippopotamus } from "./works-content";
+import { Santiamen, Halabalval, Hippopotamus } from "./projects-content";
 
 /*
 
