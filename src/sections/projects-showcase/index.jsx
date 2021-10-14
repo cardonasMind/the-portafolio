@@ -22,22 +22,33 @@ export default class extends PureComponent {
 		
 		projectsData: [
 			{
+				image: "",
+				title: "The Portfolio",
+				short: "This portfolio itself is one of my projects.",
+				link: "https://www.cardona.ml",
+				content: <div />,
+				breathing: "0.1.0"
+			},
+			{
 				image: "/static/images/sections/worked-on/hippopotamus/cover.png",
 				title: "Hippopotamus 💬",
 				short: "Real-time chat.",
-				link: "https://hippopotamus-client.vercel.app"
+				link: "https://hippopotamus-client.vercel.app",
+				content: <Hippopotamus />
 			},
 			{
 				image: "/static/images/sections/worked-on/halabalval/cover.png",
 				title: "♒️ HALABALVAL ♒️",
 				short: "The Countries Quiz Game",
-				link: "https://halabalval.vercel.app/welcome"
+				link: "https://halabalval.vercel.app/welcome",
+				content: <Halabalval />
 			},
 			{
 				image: "/static/images/sections/worked-on/santiamen/cover.png",
 				title: "Santiamén",
 				short: "Fast-food delivery platform",
-				link: "https://santiamen.ml/"
+				link: "https://santiamen.ml/",
+				content: <Santiamen />
 			}
 		]
     }
@@ -46,7 +57,7 @@ export default class extends PureComponent {
 
     changeLightboxContent = content => {
         this.setState({ lightboxContent: content });
-        window.scrollTo(0, document.getElementById("worked-on").offsetTop);
+        window.scrollTo(0, document.getElementById("projects").offsetTop);
     }
     
     render() {
@@ -57,7 +68,7 @@ export default class extends PureComponent {
                 <div id="projects" style={{ display: showLightbox ? "none" : "block" }} className="my-24">
                     <h1 className="text-2xl text-center">Projects Showcase</h1>
 
-                    <PrintProjects projectsData={projectsData} />
+                    <PrintProjects projectsData={projectsData} toggleShowLightbox={this.toggleShowLightbox} changeLightboxContent={this.changeLightboxContent} />
                 </div>
 
                 <div id="lightbox" style={{ display: showLightbox ? "block" : "none" }}>
