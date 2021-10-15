@@ -4,17 +4,6 @@ import PrintProjects from "./PrintProjects";
 
 import { Santiamen, Halabalval, Hippopotamus } from "./projects-content";
 
-/*
-
-image: string
-title: string
-short: string 
-link: string 
-content: React Element
-breathing?: string "0.0.1"
-
-*/
-
 export default class extends PureComponent {
     state = {
         showLightbox: false,
@@ -22,7 +11,7 @@ export default class extends PureComponent {
 		
 		projectsData: [
 			{
-				image: "",
+				image: "/static/images/sections/projects/the-portfolio/cover.jpg",
 				title: "The Portfolio",
 				short: "This portfolio itself is one of my projects.",
 				link: "https://www.cardona.ml",
@@ -30,21 +19,21 @@ export default class extends PureComponent {
 				breathing: "0.1.0"
 			},
 			{
-				image: "/static/images/sections/worked-on/hippopotamus/cover.png",
+				image: "/static/images/sections/projects/hippopotamus/cover.png",
 				title: "Hippopotamus 💬",
 				short: "Real-time chat.",
 				link: "https://hippopotamus-client.vercel.app",
 				content: <Hippopotamus />
 			},
 			{
-				image: "/static/images/sections/worked-on/halabalval/cover.png",
+				image: "/static/images/sections/projects/halabalval/cover.png",
 				title: "♒️ HALABALVAL ♒️",
 				short: "The Countries Quiz Game",
 				link: "https://halabalval.vercel.app/welcome",
 				content: <Halabalval />
 			},
 			{
-				image: "/static/images/sections/worked-on/santiamen/cover.png",
+				image: "/static/images/sections/projects/santiamen/cover.png",
 				title: "Santiamén",
 				short: "Fast-food delivery platform",
 				link: "https://santiamen.ml/",
