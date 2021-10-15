@@ -1,21 +1,19 @@
-import react from "react";
-
-//import "./index.css";
+import React from "react";
 
 import Header from "../header";
 
 export default function Halabalval({ toggleShowLightbox }) {
     return (
-        <div id="santiamen-project">
+        <div id="halabalval-project">
             <Header toggleShowLightbox={toggleShowLightbox} repo="https://github.com/cardonasMind/halabalval" 
                 thanks={["nextjs", "reactjs", "redux", "sass", "rest"]}/>
             
-            <div id="halabalval-project__content">
-                <h1>♒️ HALABALVAL ♒️</h1>
+            <div id="halabalval-project__content" className="p-4 space-y-4 text-justify">
+                <h1 className="text-center text-2xl">♒️ HALABALVAL ♒️</h1>
                 
                 <p>Halabalval is just a random word, don´t pay to much attention to it.</p>
 
-                <p>Its a countries quiz game which uses a free and public REST API <a href="https://restcountries.eu/" target="_blank">https://restcountries.eu/</a> to get all the necessary data to every action (sort of) of the game.</p>
+                <p>Its a countries quiz game which uses a free and public REST API <a href="https://restcountries.eu/" target="_blank" className="border border-black px-2 bg-blue-100 hover:bg-blue-200">https://restcountries.eu/</a> to get all the necessary data to every action (sort of) of the game.</p>
 
                 <p>For simplicity purposes I decided to just work with 20 countries. So in this case, the are only questions and answers about those 20.</p>
 
