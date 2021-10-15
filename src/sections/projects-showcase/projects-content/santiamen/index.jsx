@@ -1,6 +1,4 @@
-import react from "react";
-
-//import "./index.css";
+import React from "react";
 
 import Header from "../header";
 
@@ -10,8 +8,8 @@ export default function Santiamen({ toggleShowLightbox }) {
             <Header toggleShowLightbox={toggleShowLightbox} repo="https://github.com/cardonasMind/santiamen" 
                 thanks={["nextjs", "reactjs", "firebase", "npm", "javascript", "html5", "css3"]}/>
             
-            <div id="santiamen-project__content">
-                <h1>Santiamén</h1>
+            <div id="santiamen-project__content" className="p-4 space-y-4 text-justify">
+                <h1 className="text-2xl text-center">Santiamén</h1>
                 <p>Santiamén is a colloquial spanish word that means very fast. 
                 I found a similar english word which is trice.</p> 
 
@@ -19,22 +17,22 @@ export default function Santiamen({ toggleShowLightbox }) {
 
                 <p>For me these where times of a lot of learning and growing wich someone uneducated could consider as "mistakes”. I learned both the technical part and the human one, since I did everything, from codding to contact local business.</p>
                 
-                <div className="image-container">
-                    <img src="/static/images/sections/worked-on/santiamen/santiamen-mvp.gif" />
-                    <p>This was the first (really hasty) version, code was a disaster as well as the design (sort of) Check it by your own: <a href="https://santiamen-3fukott7r.vercel.app/" target="_blank">https://santiamen-3fukott7r.vercel.app/</a> (resize screen to mobile)</p>
+                <div>
+                    <img src="/static/images/sections/projects/santiamen/santiamen-mvp.gif" />
+                    <p>This was the first (really hasty) version, code was a disaster as well as the design (sort of) Check it by your own: <a href="https://santiamen-3fukott7r.vercel.app/" target="_blank" className="border border-black px-2 bg-blue-100 hover:bg-blue-200">https://santiamen-3fukott7r.vercel.app/</a> (resize screen to mobile)</p>
                 </div>
 
-                <div className="image-container">
-                    <img src="/static/images/sections/worked-on/santiamen/santiamen-order-stages.gif" />
+                <div>
+                    <img src="/static/images/sections/projects/santiamen/santiamen-order-stages.gif" />
                     <p>Then due to a business owner request I implemented a order status wich allows clients (business clients, not mine in the first place) to know the state of their order, (when was being prepared, shipped and that)</p>
                 </div>
 
-                <div className="image-container">
-                    <img src="/static/images/sections/worked-on/santiamen/santiamen-now.png" />
-                    <p>This is how it looks like right now. Check it yourself here: <a href="https://www.santiamen.ml" target="_blank">https://www.santiamen.ml</a> (resize screen to mobile)</p>
+                <div>
+                    <img src="/static/images/sections/projects/santiamen/santiamen-now.png" />
+                    <p>This is how it looks like right now. Check it yourself here: <a href="https://www.santiamen.ml" target="_blank" className="border border-black px-2 bg-blue-100 hover:bg-blue-200">https://www.santiamen.ml</a> (resize screen to mobile)</p>
                 </div>
-                <div className="image-container">
-                    <img src="/static/images/sections/worked-on/santiamen/santiamen-business.gif" />
+                <div>
+                    <img src="/static/images/sections/projects/santiamen/santiamen-business.gif" />
                     <p>And this is how business owners panel looks like.</p>
                 </div>
                 

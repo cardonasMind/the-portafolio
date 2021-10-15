@@ -60,7 +60,7 @@ export default class extends PureComponent {
                     <PrintProjects projectsData={projectsData} toggleShowLightbox={this.toggleShowLightbox} changeLightboxContent={this.changeLightboxContent} />
                 </div>
 
-                <div id="lightbox" style={{ display: showLightbox ? "block" : "none" }}>
+                <div id="lightbox" style={{ display: showLightbox ? "block" : "none" }} className="mb-24">
                     {lightboxContent}
                 </div>
             </Fragment>
