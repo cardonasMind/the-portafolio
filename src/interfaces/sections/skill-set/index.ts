@@ -1,14 +1,4 @@
-interface ISkillItemProps {
-	icon: string,
-	name: string,
-	knowledge: number
-}
-
-interface IPrintSkillsProps {
-	skillSetData: {
-		title: string,
-		skills: { ISkillItemProps }[]
-	}[]
-}
+import ISkillItemProps from "./ISkillItemProps";
+import IPrintSkillsProps from "./IPrintSkillsProps";
 
 export { ISkillItemProps, IPrintSkillsProps }; 
