@@ -5,6 +5,6 @@ export default interface IProjectCardProps {
 	readonly link: string;
 	readonly content: JSX.Element;
 	readonly breathing?: string;
-	toggleShowLightbox: () => void;
-	changeLightboxContent: (content: JSX.Element) => void;
+	toggleShowLightbox: any;
+	changeLightboxContent: any;
 }

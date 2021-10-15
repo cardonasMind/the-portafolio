@@ -14,6 +14,8 @@ const ProjectCard = ({ changeLightboxContent, toggleShowLightbox, image, title, 
 	return (
 		<div className="relative h-80vw md:h-40vw border border-black" style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}>
 			<div className="absolute inset-0 grid place-content-end justify-center text-center bg-gradient-to-b from-transparent to-black">
+				{breathing && <div className="absolute top-0 ml-4 bg-white font-bold py-1 px-2" >v{breathing}</div>}
+				
 				<h2 className="text-2xl text-white font-bold">{title}</h2>
 				<p className="text-white">{short}</p>
 			
