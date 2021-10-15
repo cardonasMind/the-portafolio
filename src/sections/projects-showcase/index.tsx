@@ -2,7 +2,7 @@ import { PureComponent, Fragment } from "react";
 
 import PrintProjects from "./PrintProjects";
 
-import { Santiamen, Halabalval, Hippopotamus } from "./projects-content";
+import { Santiamen, Halabalval, Hippopotamus, ThePortfolio } from "./projects-content";
 
 export default class extends PureComponent {
     state = {
@@ -15,7 +15,7 @@ export default class extends PureComponent {
 				title: "The Portfolio",
 				short: "This portfolio itself is one of my projects.",
 				link: "https://www.cardona.ml",
-				content: <div />,
+				content: <ThePortfolio />,
 				breathing: "0.1.0"
 			},
 			{

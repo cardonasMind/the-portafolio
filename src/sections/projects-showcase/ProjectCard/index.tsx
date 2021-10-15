@@ -1,10 +1,13 @@
-import React from "react";
+import React, { cloneElement } from "react";
 
 import { IProjectCardProps } from "../../../interfaces/sections/projects-showcase"; 
 
 const ProjectCard = ({ changeLightboxContent, toggleShowLightbox, image, title, short, link, content, breathing }: IProjectCardProps) => {
 	const handleLightboxButton = () => {
-		changeLightboxContent(content);
+		// Just to send toggleShowLightbox property
+		const contentWithProps = cloneElement(content, { toggleShowLightbox });
+				
+		changeLightboxContent(contentWithProps);
         toggleShowLightbox();
 	}
 	

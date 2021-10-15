@@ -1,3 +1,6 @@
-export { default as Santiamen } from "./santiamen";
-export { default as Halabalval } from "./halabalval";
-export { default as Hippopotamus } from "./hippopotamus"
+import Santiamen from "./santiamen";
+import Halabalval from "./halabalval";
+import Hippopotamus from "./hippopotamus"
+import ThePortfolio from "./the-portfolio";
+
+export { Santiamen, Halabalval, Hippopotamus, ThePortfolio }; 
