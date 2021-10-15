@@ -12,7 +12,8 @@ module.exports = {
          'projectsShowcase': "repeat(2, minmax(40vw, 1fr))",
        },
 	   height: {
-			'40vw': "40vw"
+			'40vw': "40vw",
+			'80vw': "80vw"
 	   }
 	}
   },

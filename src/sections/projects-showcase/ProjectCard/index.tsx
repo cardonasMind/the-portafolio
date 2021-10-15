@@ -1,13 +1,6 @@
 import React from "react";
 
-interface IProjectCardProps {
-	image: string
-	title: string
-	short: string 
-	link: string,
-	content: JSX.Element,
-	breathing?: string
-}
+import { IProjectCardProps } from "../../../interfaces/sections/projects-showcase"; 
 
 const ProjectCard = ({ changeLightboxContent, toggleShowLightbox, image, title, short, link, content, breathing }: IProjectCardProps) => {
 	const handleLightboxButton = () => {
@@ -16,7 +9,7 @@ const ProjectCard = ({ changeLightboxContent, toggleShowLightbox, image, title, 
 	}
 	
 	return (
-		<div className="relative h-40vw border border-black" style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}>
+		<div className="relative h-80vw md:h-40vw border border-black" style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}>
 			<div className="absolute inset-0 grid place-content-end justify-center text-center bg-gradient-to-b from-transparent to-black">
 				<h2 className="text-2xl text-white font-bold">{title}</h2>
 				<p className="text-white">{short}</p>

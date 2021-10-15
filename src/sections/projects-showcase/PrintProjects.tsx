@@ -1,17 +1,8 @@
 import React from "react";
 
-import ProjectCard from "./ProjectCard";
+import { IPrintProjectsProps } from "../../interfaces/sections/projects-showcase";
 
-interface IPrintProjectsProps {
-    projectsData: { 
-        image: string
-		title: string
-		short: string 
-		link: string,
-		content: JSX.Element,
-		breathing?: string
-    }[]
-}
+import ProjectCard from "./ProjectCard";
 
 const PrintProjects = (props: IPrintProjectsProps) => {
     const { projectsData, toggleShowLightbox, changeLightboxContent } = props;
