@@ -3,17 +3,6 @@
     padding-bottom: 8rem;
 }
 
-#worked-on__title {
-    text-align: center;
-}
-
-
-
-
-
-#lightbox {
-    display: none;
-}
 
 #lightbox .image-container {
     border-left: .4rem solid royalblue;
