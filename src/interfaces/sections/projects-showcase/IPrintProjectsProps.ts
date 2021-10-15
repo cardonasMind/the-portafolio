@@ -1,5 +1,7 @@
 import IProjectCardProps from "./IProjectCardProps";
 
 export default interface IPrintProjectsProps {
-    projectsData: IProjectCardProps[]
+    readonly projectsData: IProjectCardProps[];
+	toggleShowLightbox: () => void;
+	changeLightboxContent: (content: JSX.Element) => void;
 }

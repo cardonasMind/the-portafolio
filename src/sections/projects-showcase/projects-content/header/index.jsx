@@ -6,7 +6,7 @@ export default function Header({ toggleShowLightbox, repo, thanks }) {
     return (
         <div style={projectHeaderBackground} className="p-4 space-y-4">
 			<div className="flex justify-center">
-				<div className="border border-black p-2">
+				<div className="border border-black p-4">
 					<a className="bg-red-300 hover:bg-red-400 p-2 flex gap-2 justify-center mb-4" href={repo} target="_blank">
 						<img src="/static/icons/github.svg" /> Repo
 					</a>
