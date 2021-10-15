@@ -9,13 +9,6 @@
 
 
 
-#worked-on__cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(40vw, 1fr));
-    grid-gap: 4rem;
-    margin: 4rem var(--content);
-}
-
 
 
 #lightbox {
@@ -35,14 +28,3 @@
     background: royalblue;
 }
 
-
-
-
-
-
-/*      Media querys        */
-@media screen and (max-width: 768px) {
-    #worked-on__cards {
-        grid-template-columns: 1fr;
-    }
-}

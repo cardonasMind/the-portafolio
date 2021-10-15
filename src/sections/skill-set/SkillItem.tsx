@@ -1,10 +1,6 @@
 import React from "react";
 
-interface ISkillItemProps { 
-    icon: string,
-    name: string,
-    knowledge: number
-}
+import { ISkillItemProps } from "../../interfaces/sections/skill-set";
 
 const SkillItem = ({ icon, name, knowledge }: ISkillItemProps) => {
 	switch(knowledge) {

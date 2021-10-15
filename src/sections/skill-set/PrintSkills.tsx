@@ -1,13 +1,8 @@
 import React, { Fragment } from "react";
 
-import SkillItem from "./SkillItem";
+import { IPrintSkillsProps } from "../../interfaces/sections/skill-set";
 
-interface IPrintSkillsProps {
-    skillSetData: { 
-        title: string, 
-        skills: { icon: string, name: string, knowledge: number }[] 
-    }[]
-}
+import SkillItem from "./SkillItem";
 
 const PrintSkills = (props: IPrintSkillsProps) => {
     const { skillSetData } = props;
