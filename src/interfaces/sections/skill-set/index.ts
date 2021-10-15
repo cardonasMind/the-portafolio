@@ -1,12 +1,14 @@
-export interface ISkillItemProps {
+interface ISkillItemProps {
 	icon: string,
 	name: string,
 	knowledge: number
 }
 
-export interface IPrintSkillsProps {
+interface IPrintSkillsProps {
 	skillSetData: {
 		title: string,
 		skills: { ISkillItemProps }[]
 	}[]
 }
+
+export { ISkillItemProps, IPrintSkillsProps }; 
