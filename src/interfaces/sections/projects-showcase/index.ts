@@ -1,4 +1,4 @@
-import IPrintProjectsProps from "./IPrintProjectsProps";
 import IProjectCardProps from "./IProjectCardProps";
+import IPrintProjectsProps from "./IPrintProjectsProps";
 
-export { IPrintProjectsProps, IProjectCardProps };
+export type { IProjectCardProps, IPrintProjectsProps };

@@ -1,8 +1,8 @@
 export default interface IProjectCardProps {
-	image: string;
-	title: string;
-	short: string;
-	link: string;
-	content: JSX.Element;
-	breathing?: string;
+	readonly image: string;
+	readonly title: string;
+	readonly short: string;
+	readonly link: string;
+	readonly content: JSX.Element;
+	readonly breathing?: string;
 }

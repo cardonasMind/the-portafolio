@@ -1,5 +1,5 @@
 export default interface ISkillItemProps {
-	icon: string,
-	name: string,
-	knowledge: number
+	readonly icon: string;
+	readonly name: string;
+	readonly knowledge: number;
 }

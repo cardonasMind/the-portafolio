@@ -2,7 +2,7 @@ import ISkillItemProps from "./ISkillItemProps";
 
 export default interface IPrintSkillsProps {
 	skillSetData: {
-		title: string,
-		skills: { ISkillItemProps }[]
+		readonly title: string;
+		readonly skills: ISkillItemProps[]
 	}[]
 }
