@@ -12,9 +12,7 @@ const PrintProjects = ({ projectsData, toggleShowLightbox, changeLightboxData }:
 					const id = index;
 					const projectDataProps = {...project, id};
 					
-					console.log(projectDataProps);
-					
-					
+					// Dont FUCKING know why I wasn´t able to do {...project} id={index} .____________.
 					return <ProjectCard key={index} {...projectDataProps} toggleShowLightbox={toggleShowLightbox} changeLightboxData={changeLightboxData} />
 				})
             }
