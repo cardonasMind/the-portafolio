@@ -8,9 +8,15 @@ const PrintProjects = ({ projectsData, toggleShowLightbox, changeLightboxData }:
     return (
         <div className="m-4 grid md:grid-cols-projectsShowcase gap-4">
             {
-                projectsData.map((project, index) => 
-					<ProjectCard {...project} toggleShowLightbox={toggleShowLightbox} changeLightboxData={changeLightboxData} />
-				)
+                projectsData.map((project, index) => {
+					const id = index;
+					const projectDataProps = {...project, id};
+					
+					console.log(projectDataProps);
+					
+					
+					return <ProjectCard key={index} {...projectDataProps} toggleShowLightbox={toggleShowLightbox} changeLightboxData={changeLightboxData} />
+				})
             }
         </div>
     )
